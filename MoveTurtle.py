@@ -1,11 +1,13 @@
 # setup
 import turtle
-chibi = "Tenor.gif"
+chibi = "giphy.gif"
+bg = "turtlebgpic1.gif"
 ruby = turtle.Turtle()
 wn = turtle.Screen()
 wn.setup(700, 700)
+wn.bgpic(bg)
 wn.title("Chibi Keys")
-wn.addshape(chibi)
+wn.register_shape(chibi)
 ruby.shape(chibi)
 ruby.penup()
 
@@ -26,7 +28,6 @@ def left():
 
 def right():
     ruby.forward(50)
-
 
 # using key input (arrow keys) to call the functions
 wn.onkey(up, "Up")
