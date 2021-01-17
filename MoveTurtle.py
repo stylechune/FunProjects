@@ -1,6 +1,7 @@
 # setup
 import turtle
 chibi = "giphy.gif"
+chibiflip = "giphyflip.gif"
 bg = "turtlebgpic1.gif"
 ruby = turtle.Turtle()
 wn = turtle.Screen()
@@ -8,10 +9,18 @@ wn.setup(700, 700)
 wn.bgpic(bg)
 wn.title("Chibi Keys")
 wn.register_shape(chibi)
+wn.register_shape(chibiflip)
 ruby.shape(chibi)
 ruby.penup()
 
 # defining functions for possible movements
+
+
+def direction(img1, img2):
+    if ruby.heading() == 0:
+        ruby.shape(img2)
+    elif ruby.heading() == 180:
+        ruby.shape(img1)
 
 
 def up():
@@ -23,11 +32,16 @@ def down():
 
 
 def left():
-    ruby.backward(50)
+    ruby.setheading(180)
+    direction(chibi, chibiflip)
+    ruby.forward(50)
 
 
 def right():
+    ruby.setheading(0)
+    direction(chibi, chibiflip)
     ruby.forward(50)
+
 
 # using key input (arrow keys) to call the functions
 wn.onkey(up, "Up")
