@@ -1,5 +1,6 @@
 # setup
 import turtle
+
 chibi = "giphy.gif"
 chibiflip = "giphyflip.gif"
 bg = "turtlebgpic1.gif"
@@ -13,7 +14,7 @@ wn.register_shape(chibiflip)
 ruby.shape(chibi)
 ruby.penup()
 
-# defining functions for possible movements
+# flipping ruby when she changes direction, and setting the directions and movements
 
 
 def direction(img1, img2):
