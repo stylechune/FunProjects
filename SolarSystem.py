@@ -21,7 +21,7 @@ SCREENH = 720
 
 size = (SCREENW, SCREENH)
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("Stars and Planets")
+pygame.display.set_caption("Solar System")
 
 done = False
 
