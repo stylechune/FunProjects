@@ -44,7 +44,7 @@ for s in range (80):
 centre_of_rotation_x = SCREENW / 2
 centre_of_rotation_y = SCREENH / 2
 
-# creating a list of angular velocity with different speeds
+# creating a list of angular velocities with different speeds
 omega = []
 # creating a list of the same angle to use with omega
 angles = []
