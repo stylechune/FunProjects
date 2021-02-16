@@ -1,1 +1,1 @@
-# Here lies some fun things I do in my spare time
+# Here are some one-file projects that can by run individually
