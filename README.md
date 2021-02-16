@@ -1,1 +1,1 @@
-# Here are some one-file projects that can by run individually
+# Here are some one-file projects that can be run individually
